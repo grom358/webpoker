@@ -89,10 +89,10 @@ function evalHand(hand) {
 
   function groupBySuit() {
     var groupBy = {
-        'c': [],
-        'd': [],
-        'h': [],
-        's': []
+      'c': [],
+      'd': [],
+      'h': [],
+      's': []
     };
 
     hand.forEach(function(card) {
