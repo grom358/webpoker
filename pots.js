@@ -157,7 +157,7 @@ PotManager.prototype.assignPots = function(results) {
 
     results.forEach(function(el) {
         if (Array.isArray(el)) {
-            self.pots.filter(function(pot, index, array) {
+            self.pots.forEach(function(pot, index, array) {
                 if (!(index in assignedPots)) {
                     var winners = splitPot(pot, el);
                     if (winners.length) {
@@ -177,7 +177,7 @@ PotManager.prototype.assignPots = function(results) {
                 }
             });
         } else {
-            self.pots.filter(function(pot, index, array) {
+            self.pots.forEach(function(pot, index, array) {
                 if (!(index in assignedPots) && el in pot.chips) {
                     assignedPots[index] = el;
                     prize[el] += pot.total;
