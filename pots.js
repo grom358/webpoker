@@ -13,18 +13,13 @@ PotManager.prototype.start = function() {
     }];
     this.betAmount = 0;
     this.bets = {};
-    for (var player in this.stacks) {
-        this.bets[player] = 0;
-    }
     this.sidePots = []; // List of side pots from previous betting rounds
 };
 
 PotManager.prototype.next = function() {
     // Setup new betting round
     this.betAmount = 0;
-    for (var player in this.stacks) {
-        this.bets[player] = 0;
-    }
+    this.bets = {};
 
     var mainPot = this.pots[this.pots.length - 1];
     this.sidePots = this.sidePots.concat(this.pots.slice(0, this.pots.length - 1));
@@ -60,7 +55,7 @@ PotManager.prototype.bet = function(player, amount) {
 
 PotManager.prototype.raise = function(player, amount) {
     var incAmount = amount - this.betAmount;
-    var incBet = amount - this.bets[player];
+    var incBet = amount - (this.bets[player] || 0);
     this.betAmount = amount;
     this.stacks[player] -= incBet;
     this.bets[player] = amount;
@@ -96,7 +91,7 @@ PotManager.prototype.call = function(player) {
             }
 
             var playerSize = Object.keys(pot.chips).length;
-            var sideAmount = this.stacks[player] + this.bets[player];
+            var sideAmount = this.stacks[player] + (this.bets[player] || 0);
             var prevCall = i > 0 ? this.pots[i - 1].callTotal : 0;
             var sideCall = sideAmount - prevCall;
             var sidePot = {
