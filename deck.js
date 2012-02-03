@@ -65,13 +65,19 @@ function shuffle(array) {
   return array;
 }
 
-var deck = cards.slice(0);
+function Deck() {
+  this.shuffle();
+}
 
-exports.draw = function() {
-  return deck.pop();
+Deck.prototype.draw = function() {
+  return this.cards.pop();
 };
 
-exports.shuffle = function() {
-  deck = cards.slice(0);
-  shuffle(deck);
+Deck.prototype.shuffle = function() {
+  this.cards = cards.slice(0);
+  shuffle(this.cards);
+};
+
+exports.createDeck = function() {
+  return new Deck();
 };
