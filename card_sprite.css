@@ -1,0 +1,221 @@
+.card {
+    display: inline-block;
+    background-image: url('images/cards.png');
+    width: 100px;
+    height: 140px;
+}
+
+.blank {
+}
+
+.back {
+    background-position: -100px 0px;
+}
+
+._2c {
+    background-position: -100px -140px;
+}
+
+._3c {
+    background-position: -200px -140px;
+}
+
+._4c {
+    background-position: -300px -140px;
+}
+
+._5c {
+    background-position: -400px -140px;
+}
+
+._6c {
+    background-position: -500px -140px;
+}
+
+._7c {
+    background-position: -600px -140px;
+}
+
+._8c {
+    background-position: -700px -140px;
+}
+
+._9c {
+    background-position: -800px -140px;
+}
+
+._Tc {
+    background-position: -900px -140px;
+}
+
+._Jc {
+    background-position: -1000px -140px;
+}
+
+._Qc {
+    background-position: -1100px -140px;
+}
+
+._Kc {
+    background-position: -1200px -140px;
+}
+
+._Ac {
+    background-position: 0px -140px;
+}
+
+._2d {
+    background-position: -100px -280px;
+}
+
+._3d {
+    background-position: -200px -280px;
+}
+
+._4d {
+    background-position: -300px -280px;
+}
+
+._5d {
+    background-position: -400px -280px;
+}
+
+._6d {
+    background-position: -500px -280px;
+}
+
+._7d {
+    background-position: -600px -280px;
+}
+
+._8d {
+    background-position: -700px -280px;
+}
+
+._9d {
+    background-position: -800px -280px;
+}
+
+._Td {
+    background-position: -900px -280px;
+}
+
+._Jd {
+    background-position: -1000px -280px;
+}
+
+._Qd {
+    background-position: -1100px -280px;
+}
+
+._Kd {
+    background-position: -1200px -280px;
+}
+
+._Ad {
+    background-position: 0px -280px;
+}
+
+._2h {
+    background-position: -100px -420px;
+}
+
+._3h {
+    background-position: -200px -420px;
+}
+
+._4h {
+    background-position: -300px -420px;
+}
+
+._5h {
+    background-position: -400px -420px;
+}
+
+._6h {
+    background-position: -500px -420px;
+}
+
+._7h {
+    background-position: -600px -420px;
+}
+
+._8h {
+    background-position: -700px -420px;
+}
+
+._9h {
+    background-position: -800px -420px;
+}
+
+._Th {
+    background-position: -900px -420px;
+}
+
+._Jh {
+    background-position: -1000px -420px;
+}
+
+._Qh {
+    background-position: -1100px -420px;
+}
+
+._Kh {
+    background-position: -1200px -420px;
+}
+
+._Ah {
+    background-position: 0px -420px;
+}
+
+._2s {
+    background-position: -100px -560px;
+}
+
+._3s {
+    background-position: -200px -560px;
+}
+
+._4s {
+    background-position: -300px -560px;
+}
+
+._5s {
+    background-position: -400px -560px;
+}
+
+._6s {
+    background-position: -500px -560px;
+}
+
+._7s {
+    background-position: -600px -560px;
+}
+
+._8s {
+    background-position: -700px -560px;
+}
+
+._9s {
+    background-position: -800px -560px;
+}
+
+._Ts {
+    background-position: -900px -560px;
+}
+
+._Js {
+    background-position: -1000px -560px;
+}
+
+._Qs {
+    background-position: -1100px -560px;
+}
+
+._Ks {
+    background-position: -1200px -560px;
+}
+
+._As {
+    background-position: 0px -560px;
+}
