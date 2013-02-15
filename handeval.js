@@ -129,8 +129,12 @@ function evalHand(hand) {
 
   function findStraight(cards) {
     var straight = [];
+    var ace;
     for (var i = 0, len = cards.length; i < len; i++) {
       var card = cards[i];
+      if (card.val() == 14) {
+        ace = card;
+      }
       if (straight.length == 0) {
         straight.push(card);
       } else {
@@ -138,13 +142,22 @@ function evalHand(hand) {
         if (prev.val() - 1 === card.val()) {
           straight.push(card);
         } else if (prev.val() !== card.val()) {
-          straight = [];
+          straight = [card];
         }
       }
 
+      // Found a straight, stop looking
       if (straight.length == 5) {
         return straight;
       }
+    }
+    
+    if (ace && straight.length == 4 && card.val() == 2) {
+      straight.push(ace);
+    }
+
+    if (straight.length == 5) {
+      return straight;
     }
   }
 
